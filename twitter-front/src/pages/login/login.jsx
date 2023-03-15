@@ -6,7 +6,7 @@ const Login = () => {
       <div className="header">
         <h1>Twitter</h1>
       </div>
-      <div>
+      <div className="box">
         <form>
           <label>Login : </label>
           <input type="text"></input>
@@ -15,7 +15,13 @@ const Login = () => {
           <input type="text"></input>
           <br></br>
         </form>
-        <input type="submit" value="login"></input>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Login
+        </a>
       </div>
     </>
   );
