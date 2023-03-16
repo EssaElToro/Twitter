@@ -1,6 +1,5 @@
 import "./dashboard.scss";
 
-// Make a dashboard for the user to see their tweets and other users' tweets
 const Dashboard = () => {
   return (
     <>
