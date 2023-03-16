@@ -1,7 +1,5 @@
 import "./dashboard.scss";
 
-// Make a dashboard for the user to see and add their tweets like and comment other users tweets
-
 const Dashboard = () => {
   return (
     <>
