@@ -6,15 +6,25 @@ const Dashboard = () => {
       <div className="header">
         <h1>Twitter</h1>
       </div>
-
-      <div className="dashboard">
-        <div className="tweets">
-          <h2>Tweets</h2>
-        </div>
-        <div className="users">
-          <h2>Users</h2>
-        </div>
+      <div className="box">
+        <form>
+          <label>Tweet : </label>
+          <input type="text"></input>
+          <br></br>
+          <label>Comment : </label>
+          <input type="text"></input>
+          <br></br>
+        </form>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Tweet
+        </a>
       </div>
     </>
   );
 };
+
+export default Dashboard;
