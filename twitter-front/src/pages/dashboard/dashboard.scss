@@ -1,0 +1,30 @@
+.board {
+  width: 700px;
+  height: auto;
+  border: 2px solid #03e9f4;
+  color: white;
+  box-shadow: 0 0 20px 10px #03e9f4;
+  overflow: auto;
+  overflow: hidden;
+  text-align: left;
+}
+button {
+  background-color: #03e9f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+a {
+  color: #03e9f4;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+}
