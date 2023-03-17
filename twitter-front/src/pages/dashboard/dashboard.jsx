@@ -1,27 +1,15 @@
 import "./dashboard.scss";
 
 const Dashboard = () => {
+  const createPost = () => {};
   return (
     <>
       <div className="header">
         <h1>Twitter</h1>
       </div>
-      <div className="box">
-        <form>
-          <label>Tweet : </label>
-          <input type="text"></input>
-          <br></br>
-          <label>Comment : </label>
-          <input type="text"></input>
-          <br></br>
-        </form>
-        <a href="#">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          Tweet
-        </a>
+      <div className="board">
+        <h1>New tweets</h1>
+        <button onClick={createPost}>Create post</button>
       </div>
     </>
   );
