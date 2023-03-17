@@ -1,8 +1,12 @@
 import "./login.scss";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert";
+import swal from "sweetalert";
 
 const Login = () => {
+  <script src="//unpkg.com/sweetalert/dist/sweetalert.min.js"></script>;
+
   const passwordRef = React.createRef();
   const loginRef = React.createRef();
 
@@ -18,6 +22,9 @@ const Login = () => {
     if (login === "admin" && password === "admin") {
       console.log("success");
       navigate("/dashboard");
+    } else {
+      console.log("error");
+      swal("Error", "Wrong login or password", "error");
     }
   };
   return (
@@ -40,6 +47,8 @@ const Login = () => {
             <span></span>
             Login
           </button>
+          <a href="/register">Create account</a>
+          <a href="/forgot">Forgot password</a>
         </form>
       </div>
     </>
