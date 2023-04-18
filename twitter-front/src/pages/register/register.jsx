@@ -7,9 +7,6 @@ const Register = () => {
   const navigate = useNavigate();
 
   const validate = (email, Nickname, password, confirmPassword) => {
-    console.log(email);
-    console.log(email.split(""));
-    console.log(email.split("").includes("@"));
     if (!email.split("").includes("@")) {
       swal("Error", "Invalid email address", "error");
       return false;
