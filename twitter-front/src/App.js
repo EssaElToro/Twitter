@@ -1,14 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Login, Dashboard } from "./pages";
+import { Login, Dashboard, Register, Email } from "./pages";
 
 const App = () => {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/*" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/register/email" element={<Email />} />
         </Routes>
       </BrowserRouter>
     </div>
