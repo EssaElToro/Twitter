@@ -1,6 +1,7 @@
 import "./email.scss";
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import swal from "sweetalert";
 
 const Email = () => {
   const navigate = useNavigate();
@@ -8,6 +9,7 @@ const Email = () => {
   const verify_handler = (e) => {
     e.preventDefault();
     navigate("/login ");
+    swal("Success", "Email verified successfully", "success");
   };
   return (
     <>
