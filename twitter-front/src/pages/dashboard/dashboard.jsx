@@ -12,8 +12,6 @@ const Dashboard = () => {
       <div className="board">
         <h1>New tweets</h1>
         <button onClick={createPost}>Create post</button>
-<<<<<<< Updated upstream
-=======
         <Popup trigger={<button> Trigger</button>} position="right center">
           <div>Popup content here !!</div>
         </Popup>
@@ -27,7 +25,6 @@ const Dashboard = () => {
         <h1>Search</h1>
         <input type="text" placeholder="Search" />
         <a>Filters:</a>
->>>>>>> Stashed changes
       </div>
     </>
   );
