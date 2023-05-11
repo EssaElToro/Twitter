@@ -1,7 +1,10 @@
 import "./login.scss";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+<<<<<<< Updated upstream
 import Swal from "sweetalert";
+=======
+>>>>>>> Stashed changes
 import swal from "sweetalert";
 
 const Login = () => {
@@ -34,13 +37,13 @@ const Login = () => {
       </div>
       <div className="box">
         <form onSubmit={loginHandler}>
-          <label>Login : </label>
+          <label>Nickname : </label>
           <input type="text" name="uname" required ref={loginRef}></input>
           <br></br>
           <label>Password : </label>
           <input type="password" required ref={passwordRef}></input>
           <br></br>
-          <button className="submit-button">
+          <button type="submit" className="submit-button">
             <span></span>
             <span></span>
             <span></span>
@@ -48,7 +51,11 @@ const Login = () => {
             Login
           </button>
           <a href="/register">Create account</a>
+<<<<<<< Updated upstream
           <a href="/forgot">Forgot password</a>
+=======
+          <a href="/forget-password">Forget password</a>
+>>>>>>> Stashed changes
         </form>
       </div>
     </>

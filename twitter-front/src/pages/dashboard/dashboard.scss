@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .board {
   width: 700px;
   height: auto;
@@ -28,3 +29,80 @@ a {
   text-decoration: none;
   margin: 10px;
 }
+=======
+.board {
+  position: absolute;
+  width: 750px;
+  border: 2px solid #03e9f4;
+  color: white;
+  box-shadow: 0 0 20px 10px #03e9f4;
+  overflow: auto;
+  overflow: hidden;
+  text-align: left;
+  left: 25%;
+}
+button {
+  background-color: #03e9f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+a {
+  color: #03e9f4;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 10px;
+}
+.profile {
+  position: absolute;
+  color: white;
+  box-shadow: 0 0 20px 10px #03e9f4;
+  width: 275px;
+  height: auto;
+  border: 2px solid #03e9f4;
+  padding: 10px;
+  margin: 10px;
+  top: 0px;
+  right: 0px;
+}
+.filters {
+  position: absolute;
+  color: white;
+  box-shadow: 0 0 20px 10px #03e9f4;
+  width: 275px;
+  height: auto;
+  border: 2px solid #03e9f4;
+  padding: 10px;
+  margin: 10px;
+  top: 0px;
+  left: 0px;
+}
+.popup-content {
+  margin: auto;
+  background: rgb(255, 255, 255);
+  width: 50%;
+  padding: 5px;
+}
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
+}
+>>>>>>> Stashed changes
