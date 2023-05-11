@@ -1,10 +1,6 @@
 import "./login.scss";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-<<<<<<< Updated upstream
-import Swal from "sweetalert";
-=======
->>>>>>> Stashed changes
 import swal from "sweetalert";
 
 const Login = () => {
@@ -51,11 +47,7 @@ const Login = () => {
             Login
           </button>
           <a href="/register">Create account</a>
-<<<<<<< Updated upstream
-          <a href="/forgot">Forgot password</a>
-=======
           <a href="/forget-password">Forget password</a>
->>>>>>> Stashed changes
         </form>
       </div>
     </>

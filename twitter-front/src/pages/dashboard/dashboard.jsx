@@ -12,9 +12,6 @@ const Dashboard = () => {
       <div className="board">
         <h1>New tweets</h1>
         <button onClick={createPost}>Create post</button>
-        <Popup trigger={<button> Trigger</button>} position="right center">
-          <div>Popup content here !!</div>
-        </Popup>
       </div>
       <div className="profile">
         <h1>Settings</h1>

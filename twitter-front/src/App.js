@@ -1,8 +1,5 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-<<<<<<< Updated upstream
-import { Login, Dashboard, Register, Email, Reminder, Password } from "./pages";
-=======
 import {
   Login,
   Dashboard,
@@ -12,7 +9,6 @@ import {
   Password,
   Profile,
 } from "./pages";
->>>>>>> Stashed changes
 
 const App = () => {
   return (
@@ -24,10 +20,7 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/register/email" element={<Email />} />
           <Route path="/forget-password" element={<Reminder />} />
-<<<<<<< Updated upstream
-=======
           <Route path="/Dashboard/profile" element={<Profile />} />
->>>>>>> Stashed changes
           <Route
             path="/forget-password/change-password"
             element={<Password />}
