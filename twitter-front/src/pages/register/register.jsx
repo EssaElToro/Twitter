@@ -24,9 +24,10 @@ const Register = () => {
   const registerHandler = async (e) => {
     e.preventDefault();
     const email = e.target.email.value;
-    const Nickname = e.target.uname.value;
+    const Nickname = e.target.name.value;
     const password = e.target.password.value;
     const confirmPassword = e.target.confirmPassword.value;
+    console.log(email, Nickname, password, confirmPassword);
 
     if (validate(email, Nickname, password, confirmPassword)) {
       navigate("/register/email");
@@ -44,7 +45,7 @@ const Register = () => {
           <input type="text" name="email" required></input>
           <br></br>
           <label>Nickname : </label>
-          <input type="text" name="uname" required></input>
+          <input type="text" name="name" required></input>
           <br></br>
           <label>Password : </label>
           <input type="password" name="password" required></input>
