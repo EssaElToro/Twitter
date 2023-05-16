@@ -24,14 +24,25 @@ const Dashboard = () => {
     setFile(URL.createObjectURL(e.target.files[0]));
   };
 
-  const twittsHandler = () => {};
+  const twittsHandler = () => {
+    setIsOpen(false);
+    Event.preventDefault();
+    const form = document.querySelector("form");
+    const title = form.title.value;
+    const description = form.description.value;
+    const image = form.image.value;
+    const data = { title, description, image };
+    console.log(data);
+  };
+
   return (
     <>
-      <div className="header">
+      <div className="headerd">
         <h1>Twitter</h1>
       </div>
       <div className="board">
         <h1>New tweets</h1>
+
         <div className="popup">
           <button onClick={() => setIsOpen(true)}>Add tweet</button>
           <ReactModal
@@ -45,16 +56,16 @@ const Dashboard = () => {
                 <icons.LucideXSquare></icons.LucideXSquare>
               </icon>
               <h1>New tweet</h1>
-              <form onSubmit={twittsHandler}>
+              <form>
                 <h2>Add Image:</h2>
                 <img src={file} />
                 <input type="file" onChange={changeHandler} />
                 <input type="text" placeholder="Title" required />
                 <input type="text" placeholder="Description" />
                 <br></br>
-                <icon type="submit" className="abc">
-                  <icons.LucideSend></icons.LucideSend>
-                </icon>
+                <button type="submit" className="submit">
+                  Add post
+                </button>
               </form>
             </div>
           </ReactModal>
