@@ -6,8 +6,6 @@
   box-shadow: 0 0 20px 10px #03e9f4;
   overflow: auto;
   overflow: hidden;
-  text-align: left;
-  left: 25%;
 }
 button {
   background-color: #03e9f4;
@@ -53,23 +51,29 @@ a {
   top: 0px;
   left: 0px;
 }
-.popup-content {
-  margin: auto;
-  background: rgb(255, 255, 255);
-  width: 50%;
-  padding: 5px;
+.post {
+  margin: 50px;
+  padding: 10px;
 }
-.popup-arrow {
-  color: rgb(255, 255, 255);
+inputtype text {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: black 1px solid;
 }
-[role="tooltip"].popup-content {
-  width: 200px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+image {
+  height: auto;
+  width: auto;
 }
-
-.popup-overlay {
-  background: rgba(0, 0, 0, 0.5);
+icon {
+  position: absolute;
+  color: black;
+  right: 20px;
+  cursor: pointer;
 }
-[data-popup="tooltip"].popup-overlay {
-  background: transparent;
+button {
+  background-color: black;
+  width: auto;
+  height: auto;
 }
